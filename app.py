@@ -31,7 +31,7 @@ if st.button("AI 선생님께 교정받기 ✨"):
             
             # 404 에러 방지를 위해 가장 범용적인 모델명 사용
             # 만약 gemini-1.5-flash가 안되면 gemini-2.0-flash로 자동 시도하도록 설정 가능
-            model = genai.GenerativeModel('gemini-1.5-flash')
+            model = genai.GenerativeModel('gemini-2.0-flash')
             
             with st.spinner('AI 선생님이 일기를 분석 중입니다...'):
                 prompt = f"""
